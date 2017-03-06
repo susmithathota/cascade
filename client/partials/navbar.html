@@ -1,6 +1,6 @@
 <div class="navbar-wrapper">
 	<div class="container">
-		<nav class="navbar navbar-inverse navbar-static-top">
+		<nav class="navbar  navbar-static-top">
 		  <div class="container-fluid">
 		    <div class="navbar-header">
 		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -11,10 +11,12 @@
 		      <a class="navbar-brand" href="#">Cascade Kidney Specialists</a>
 		    </div>
 		    <div class="collapse navbar-collapse" id="myNavbar">
-		      <ul class="nav navbar-nav">
-		        <li><a href="#">Home</a></li>
-		        <li><a href="#/contact">Contact Us</a></li>
-		        <li><a href="#">Patient Center</a></li>
+		      <ul class="nav navbar-nav" id="menu">
+		        <li data-menuanchor="home"><a href="#" class="navItem">Home</a> </li>
+		        <li data-menuanchor="providers"><a href="#" class="navItem">Providers</a> </li>
+		        <li data-menuanchor="location"><a href="#" class="navItem">Location</a> </li>
+		        <li data-menuanchor="contact"><a href="#/contact" class="navItem">Contact Us</a> </li>
+		        <li data-menuanchor="patientCenter"><a href="#/patientCenter" class="navItem">Patient Center</a> </li>
 		      </ul>
 		    </div>
 		  </div>

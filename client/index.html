@@ -6,6 +6,8 @@
 	<!-- link my css -->
 	<link rel="stylesheet" type="text/css" href="index.css">
 
+	<link rel="stylesheet" type="text/css" href="scripts/fullpage.js/dist/jquery.fullPage.css" />
+
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -15,19 +17,24 @@
 
   	<!--google maps-->
   	<script src='//maps.googleapis.com/maps/api/js?sensor=false&key=AIzaSyBllhKwQNy3ijbuRU7VAUquHf9LbHrSj4Q'></script>
-  	<script src="scripts/lodash/lodash.js"></script>
-  	<script src="scripts/angular-google-maps/dist/angular-google-maps.js"></script>
-  	<script src="scripts/angular-simple-logger/dist/angular-simple-logger.js"></script>
 
+  	<script src="scripts/angular-fullpage.js/angular-fullpage.min.js"></script>
+  	<script type="text/javascript" src="scripts/fullpage.js/dist/jquery.fullPage.js"></script>
+  	
   	<script src="app.js"></script>
   	<script src="controllers/maps.js"></script>
+  	<script src="controllers/main.js"></script>
  
 </head>
 <body>
-	<div ng-include="'partials/navbar.html'"></div>
-	<div ng-include="'partials/carouselDisplay.html'"></div>
-	<div ng-include="'partials/providers.html'"></div>
-	<div ng-include="'partials/location.html'"></div>
-	<div ng-view=""></div>
+	<div ng-controller="mainController as MC">
+			<div ng-include="'partials/navbar.html'"></div>
+		<div full-page options="MC.mainOptions">
+		    <div class="section" ng-include="'partials/carouselDisplay.html'"></div>
+		    <div class="section" ng-include="'partials/providers.html'"></div>
+		    <div class="section" ng-include="'partials/location.html'"></div>
+		    <div class="section" ng-include="'partials/contactUs.html'"></div>
+		</div>
+	</div>
 </body>
 </html>

@@ -1,6 +1,7 @@
 body{
 	padding-bottom: 40px;
 	color:#5a5a5a;
+	/*color:white;*/
 }
 /*------------navbar----------*/
 .navbar-wrapper{
@@ -11,14 +12,12 @@ body{
 	right: 0;
 	z-index:20px;
 }
-.navbar-inverse .navbar-toggle{
-	border-color: #333;
-}
 .navbar-static-top{
 	z-index:1000;
 	border-width: 0 0 1px;
 }
 .navbar-toogle{
+	border-color: #333;
 	position:relative;
 	float:right;
 	padding:9ps 10px;
@@ -29,10 +28,8 @@ body{
 	border:1px solid transparent;
 	border-radius: 4px; 
 }
-.navbar-inverse .navbar-brand{
-	color:#9d9d9d;
-}
 .navbar-brand{
+	color:white;
 	float:left;
 	height:50px;
 	padding: 15px 15px;
@@ -49,8 +46,38 @@ body{
 	margin-bottom:20px;
 	border:1px solid transparent;
 }
+#myNavbar{
+	float:right;
+}
+.navItem{
+	color:white;
+	font-size:large;
+}
+.navbar-nav>li.active>a{
+	background-color: #eee;
+	color:#337ab7;
+} 
+/*------------slides--------*/
+.slide{
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center; 
+	opacity:0.6;
+}
+#slide1{
+	background-image: url("https://www.overlakehospital.org/sites/default/files/2016-09/daisy-awards_0_0.jpg");
+}
+#slide2{
+	background-image: url('https://www.overlakehospital.org/sites/default/files/2016-09/leading-technology_0_0.jpg');
+}
+#slide3{
+	background-image: url('https://www.overlakehospital.org/sites/default/files/2016-09/prostate-mri_0.jpg');
+}
+#slide4{
+	background-image: url('https://www.overlakehospital.org/sites/default/files/2016-09/one-chart_0.jpg');
+}
 /*------------carousel-----------*/
-.carousel {
+/*.carousel {
   position: absolute;
   height: 500px;
   margin-bottom: 60px;
@@ -68,11 +95,22 @@ body{
   left: 0;
   min-width: 100%;
   height: 500px;
+}*/
+.textWrap{
+	text-align: center;
+	color:white;
+}
+.textWrap h1{
+	font-size:50px;
+}
+.textWrap p{
+	font-size:25px;
 }
 /*---------providers--------*/
 .providers .col-lg-4 {
-  margin-bottom: 20px;
-  text-align: center;
+   margin-top:30px;
+   margin-bottom: 20px;
+   text-align: center;
   -webkit-transition: width 2s,height 2s; /* For Safari 3.1 to 6.0 */
    transition: width 2s, height 2s;
    transition-delay: 1s;
@@ -88,6 +126,7 @@ body{
 }
 .img-circle{
 	border-radius: 50%;
+	margin-top:10px;
 }
 img{
 	vertical-align: middle;

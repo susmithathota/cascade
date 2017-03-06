@@ -1,7 +1,7 @@
-var app= angular.module('cascade',['ngRoute']);
+var app= angular.module('cascade',['ngRoute','fullPage.js']);
 
 app.config(function($routeProvider){
 	$routeProvider
-	.when('/contact',{templateUrl:'partials/contactUs.html'})
+	.when('/patientCenter',{templateUrl:'partials/patientCenter.html'})
 	.otherwise({redirectTo:'/'})
 })
