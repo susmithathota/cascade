@@ -4,62 +4,6 @@ body{
 	background-image: url("https://www.overlakehospital.org/themes/neat_oh/img/bg-pttn-compressed.jpg");
 	background-repeat: repeat;
 }
-/*------------navbar----------*/
-.navbar-wrapper{
-	margin-top:20px;
-	position:absolute;
-	top:0;
-	left: 0;
-	right: 0;
-	z-index:20px;
-}
-.navbar-static-top{
-	z-index:1000;
-	border-width: 0 0 1px;
-}
-.navbar-toogle{
-	border-color: #333;
-	position:relative;
-	float:right;
-	padding:9ps 10px;
-	margin-top:8px;
-	margin-right: 15px;
-	margin-bottom: 8px;
-	background-color:transparent;
-	border:1px solid transparent;
-	border-radius: 4px; 
-}
-.navbar-brand{
-	/*color:white;*/
-	float:left;
-	height:50px;
-	padding: 15px 15px;
-	font-size:30px;
-	line-height: 20px;
-	z-index:3px;
-}
-.container > .navbar-collapse{
-	margin-right: 0;
-	margin-left:0 ;
-}
-.navbar{
-	position:relative;
-	min-height:50px;
-	margin-bottom:20px;
-	border:1px solid transparent;
-}
-#myNavbar{
-	float:right;
-}
-.navItem{
-	color:white;
-	font-size:large;
-	z-index:3px;
-}
-.navbar-nav>li.active>a{
-	background-color: #eee;
-	color:#337ab7;
-} 
 /*------------slides--------*/
 .slide{
 	background-size: cover;
@@ -88,16 +32,18 @@ body{
 	bottom: 0;
 	right: 0;
 	z-index: 2;
-	background-color: #bcaaa4;
+	background: linear-gradient(to bottom left,#77c4e3,#8176b5)
 }
 #slide1{
 	background-image: url("https://www.overlakehospital.org/sites/default/files/2016-09/neuroscience-institute_0_0.jpg");
 }
 #slide2{
 	background-image: url('https://www.overlakehospital.org/sites/default/files/2016-09/leading-technology_0_0.jpg');
+
 }
 #slide3{
-	background-image: url('https://www.overlakehospital.org/sites/default/files/2016-09/prostate-mri_0.jpg');
+	background-image: url('http://cancer-center.lomalindahealth.org/sites/cancer-center.lomalindahealth.org/files/images/cancer-center-doctor-phone.jpg');
+	/*background-image: url('https://www.overlakehospital.org/sites/default/files/2016-09/prostate-mri_0.jpg');*/
 }
 #slide4{
 	background-image: url('https://www.overlakehospital.org/sites/default/files/2016-09/one-chart_0.jpg');

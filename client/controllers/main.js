@@ -7,9 +7,13 @@ app.controller('mainController',function(){
 	    anchors: ['Home', 'Providers', 'Location', 'Contact', 'Patient Center'],
 	    menu:'#menu',
 	    onLeave : function ( index, nextIndex, direction){
-	    	if(index){
-	    		$("li a").css("color","green")
-	    	}
+	    	if(nextIndex == 1){
+	    		$(".navbar").removeClass("non-carousel-nav");
+				$(".overlaySlide").show();
+	    	} else {
+				$(".navbar").addClass("non-carousel-nav");
+				$(".overlaySlide").hide();
+			}
 			console.log(index);
 	    }
 	 };
