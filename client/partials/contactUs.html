@@ -1,32 +1,38 @@
-<div class=" container col-lg-6" >
-  <md-content class="md-no-momentum">
-    
-    <md-input-container class="md-block">
-      <!-- Use floating label instead of placeholder -->
-      <label>Name</label>
-      <!-- <md-icon md-svg-src="img/icons/ic_person_24px.svg" class="name"></md-icon> -->
-      <input ng-model="user.name" type="text">
-    </md-input-container>
+<div class="container contact col-lg-8 col-lg-offset-2">
+<div  class="md-inline-form inputdemoBasicUsage" >
 
-    <md-input-container  class="md-block">
-      <!-- <md-icon md-svg-src="img/icons/ic_phone_24px.svg"></md-icon> -->
-       <label>Name</label>
-      <input ng-model="user.phone" type="text" >
-    </md-input-container>
+  <md-content layout-padding="">
+    <div>
+      <form name="userForm">
 
-    <md-input-container class="md-block">
-      <!-- Use floating placeholder instead of label -->
-      <!-- <md-icon md-svg-src="img/icons/ic_email_24px.svg" class="email"></md-icon> -->
-       <label>Name</label>
-      <input ng-model="user.email" type="email" placeholder="Email (required)" ng-required="true">
-    </md-input-container>
+        <div layout-gt-sm="row">
+          <md-input-container class="md-block" flex-gt-sm="">
+            <label>First name</label>
+            <input ng-model="user.firstName" class="contactInput">
+          </md-input-container>
+        </div>
+        <div>
+          <md-input-container class="md-block" flex-gt-sm="">
+            <label>Last Name</label>
+            <input ng-model="tuser.firstName" >
+          </md-input-container>
+        </div>
+        <div>
+          <md-input-container class="md-block" flex-gt-sm="">
+            <label>Email</label>
+            <input ng-model="user.firstName" type="email">
+          </md-input-container>
+        </div>
+        <md-input-container class="md-block">
+          <label>Message</label>
+          <textarea ng-model="user.message" md-maxlength="150" rows="5" md-select-on-focus=""></textarea>
+        </md-input-container>
 
-    <md-input-container md-no-float="" class="md-block">
-     <label>Name</label>
-      <textarea ng-model="user.address" placeholder="Address" cols="10" rows="3"></textarea>
-      <!-- <md-icon md-svg-src="img/icons/ic_place_24px.svg" style="display:inline-block;"></md-icon> -->
-    </md-input-container>
-
+		<md-button class="md-raised md-primary">Submit</md-button>        
+      </form>
+    </div>
   </md-content>
+
 </div>
-<!-- md-icon-float -->
+</div>
+<!-- "freight-sans-pro", Helvetica, sans-serif -->

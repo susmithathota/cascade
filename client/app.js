@@ -5,3 +5,8 @@ app.config(function($routeProvider){
 	.when('/patientCenter',{templateUrl:'partials/patientCenter.html'})
 	.otherwise({redirectTo:'/'})
 })
+app.config(function($mdThemingProvider) {
+  $mdThemingProvider.theme('default')
+    .primaryPalette('teal')
+    .accentPalette('indigo');
+});
