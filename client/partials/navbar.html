@@ -1,4 +1,4 @@
-<div class="navbar-wrapper">
+<div class="navbar-wrapper" ng-controller="navbarController as NC">
 	<div class="container">
 		<nav class="navbar  navbar-static-top">
 		  <div class="container-fluid">
@@ -12,11 +12,11 @@
 		    </div>
 		    <div class="collapse navbar-collapse" id="myNavbar">
 		      <ul class="nav navbar-nav" id="menu">
-		        <li data-menuanchor="home"><a href="#" class="navItem">Home</a> </li>
-		        <li data-menuanchor="providers"><a href="#" class="navItem">Providers</a> </li>
-		        <li data-menuanchor="location"><a href="#" class="navItem">Location</a> </li>
-		        <li data-menuanchor="contact"><a href="#/contact" class="navItem">Contact Us</a> </li>
-		        <li data-menuanchor="patientCenter"><a href="#/patientCenter" class="navItem">Patient Center</a> </li>
+		        <li data-menuanchor="home" ng-class="{active:NC.setActvieColor('Home')}"><a href="#" class="navItem">Home</a> </li>
+		        <li data-menuanchor="providers"><a href="#" class="navItem" ng-class="{active:NC.setActvieColor('1')}">Providers</a> </li>
+		        <li data-menuanchor="location"><a href="#" class="navItem" ng-class="{active:NC.setActvieColor('1')}">Location</a> </li>
+		        <li data-menuanchor="contact"><a href="#/contact" class="navItem" ng-class="{active:NC.setActvieColor('1')}">Contact Us</a> </li>
+		        <li data-menuanchor="patientCenter"><a href="#/patientCenter" class="navItem" ng-class="{active:NC.setActvieColor('1')}">Patient Center</a> </li>
 		      </ul>
 		    </div>
 		  </div>

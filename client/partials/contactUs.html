@@ -1,27 +1,32 @@
-<div class="col-lg-6 col-lg-offset-3">
-	<form>
-		<div class="form-group">
-		    <label for="name">First Name</label>
-		    <input type="text" class="form-control" id="firstName">
-		</div>
-		<div class="form-group">
-		    <label for="name">Last Name</label>
-		    <input type="text" class="form-control" id="lastName">
-		</div>
-		<div class="form-group">
-		    <label for="email">Email address</label>
-		    <input type="email" class="form-control" id="email">
-		</div>
-		<div class="form-group">
-		    <label for="subject">About</label>
-		    <input type="text" class="form-control" id="subject">
-		</div>
-		<div class="form-group">
-		    <label for="Description">Description</label>
-		    <textarea class="form-control" id="description"></textarea>
-		</div>
-		<div class="form-group">
-		    <input type="submit" class="btn btn-primary" id="submit" value="Submit"> 
-		</div>
-	</form>
+<div class=" container col-lg-6" >
+  <md-content class="md-no-momentum">
+    
+    <md-input-container class="md-block">
+      <!-- Use floating label instead of placeholder -->
+      <label>Name</label>
+      <!-- <md-icon md-svg-src="img/icons/ic_person_24px.svg" class="name"></md-icon> -->
+      <input ng-model="user.name" type="text">
+    </md-input-container>
+
+    <md-input-container  class="md-block">
+      <!-- <md-icon md-svg-src="img/icons/ic_phone_24px.svg"></md-icon> -->
+       <label>Name</label>
+      <input ng-model="user.phone" type="text" >
+    </md-input-container>
+
+    <md-input-container class="md-block">
+      <!-- Use floating placeholder instead of label -->
+      <!-- <md-icon md-svg-src="img/icons/ic_email_24px.svg" class="email"></md-icon> -->
+       <label>Name</label>
+      <input ng-model="user.email" type="email" placeholder="Email (required)" ng-required="true">
+    </md-input-container>
+
+    <md-input-container md-no-float="" class="md-block">
+     <label>Name</label>
+      <textarea ng-model="user.address" placeholder="Address" cols="10" rows="3"></textarea>
+      <!-- <md-icon md-svg-src="img/icons/ic_place_24px.svg" style="display:inline-block;"></md-icon> -->
+    </md-input-container>
+
+  </md-content>
 </div>
+<!-- md-icon-float -->

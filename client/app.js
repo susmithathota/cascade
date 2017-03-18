@@ -1,4 +1,4 @@
-var app= angular.module('cascade',['ngRoute','fullPage.js']);
+var app= angular.module('cascade',['ngRoute','fullPage.js','ngMaterial']);
 
 app.config(function($routeProvider){
 	$routeProvider
