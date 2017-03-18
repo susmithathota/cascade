@@ -4,7 +4,7 @@ app.controller('mainController',function(){
 	    navigation: false,
 	    navigationPosition: 'right',
 	    scrollingSpeed: 500,
-	    anchors: ['Home', 'Providers', 'Location', 'Contact', 'Patient Center'],
+	    anchors: ['home', 'providers', 'location', 'contact', 'patient center'],
 	    menu:'#menu',
 	    onLeave : function ( index, nextIndex, direction){
 	    	if(nextIndex == 1){
