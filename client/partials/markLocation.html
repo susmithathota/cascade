@@ -1,0 +1,12 @@
+<div class="container" ng-controller="mapsController">
+	<div class="col-lg-9" id="map"></div>
+	<div class="col-lg-3 location">
+		<div class="row info" ng-repeat="info in addressInfo">
+			<h3>{{info.location}}</h3>
+			<p>{{info.address}}</p>
+			<p>{{info.phoneNumber}}</p>
+			<h4>Hours Today:{{info.hoursToday}}</h4>
+			<p> <a href={{info.directions}} target="_blank"> GET DIRECTIONS</a> </p>
+		</div>
+	</div>
+</div>

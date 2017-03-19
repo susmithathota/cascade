@@ -66,8 +66,13 @@ body{
 }
 /*------google maps------------*/
 #map{ 
-	height: 400px;
-	width:400px;
+	height: 580px;
+}
+
+.info{
+	padding-left:20px;
+	border-bottom:2px solid lightgray;
+}
 /*--------Contact us----------*/
 .md-no-momentum{
 	background-color: transparent;
