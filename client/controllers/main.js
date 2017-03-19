@@ -2,8 +2,9 @@ app.controller('mainController',function(){
 	this.mainOptions = {
     // sectionsColor: ['grey', 'white', 'grey'],
 	    navigation: false,
+		controlArrows: true,
 	    navigationPosition: 'right',
-	    scrollingSpeed: 500,
+	    scrollingSpeed: 800,
 	    anchors: ['home', 'providers', 'location', 'contact', 'patient center'],
 	    menu:'#menu',
 	    onLeave : function ( index, nextIndex, direction){
@@ -23,6 +24,11 @@ app.controller('mainController',function(){
 			} else {
 				$(".overlaySlide").removeClass("noImage");
 			}
-        }
+        },
+		afterRender: function () {
+		            setInterval(function () {
+		                $.fn.fullpage.moveSlideRight();
+		            }, 4000);
+		}
 	 };
 })
