@@ -1,38 +1,24 @@
-<div class="container contact col-lg-8 col-lg-offset-2">
-<div  class="md-inline-form inputdemoBasicUsage" >
-
+<div class="container col-lg-8 col-lg-offset-2  section-content">
+<div  class="md-inline-form" >
   <md-content layout-padding="">
-    <div>
-      <form name="userForm">
-
-        <div layout-gt-sm="row">
           <md-input-container class="md-block" flex-gt-sm="">
             <label>First name</label>
             <input ng-model="user.firstName" class="contactInput">
           </md-input-container>
-        </div>
-        <div>
           <md-input-container class="md-block" flex-gt-sm="">
             <label>Last Name</label>
             <input ng-model="tuser.firstName" >
           </md-input-container>
-        </div>
-        <div>
           <md-input-container class="md-block" flex-gt-sm="">
             <label>Email</label>
             <input ng-model="user.firstName" type="email">
           </md-input-container>
-        </div>
-        <md-input-container class="md-block">
+          <md-input-container class="md-block">
           <label>Message</label>
           <textarea ng-model="user.message" md-maxlength="150" rows="5" md-select-on-focus=""></textarea>
         </md-input-container>
-
-		<md-button class="md-raised md-primary">Submit</md-button>        
-      </form>
-    </div>
+		<md-button class="md-raised md-primary">Submit</md-button>
   </md-content>
-
 </div>
 </div>
 <!-- "freight-sans-pro", Helvetica, sans-serif -->

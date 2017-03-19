@@ -1,6 +1,7 @@
 body{
 	padding-bottom: 40px;
 	color:#5a5a5a;
+	/*background: linear-gradient(to top,white,purple)*/
 	background-image: url("https://www.overlakehospital.org/themes/neat_oh/img/bg-pttn-compressed.jpg");
 	background-repeat: repeat;
 }
@@ -11,14 +12,18 @@ body{
 	background-position: center;
 }
 .overlaySlide{
-	opacity: 0.2;
+	opacity: 0.6;
 	position:fixed;
 	top: 0;
 	left:0;
 	bottom: 0;
 	right: 0;
 	z-index: 2;
-	background: linear-gradient(to bottom left,#77c4e3,#8176b5)
+	background: linear-gradient(to bottom right,#77c4e3,#8176b5)
+}
+
+.overlaySlide.noImage {
+	opacity: 1;
 }
 #slide1{
 	background-image: url("https://www.overlakehospital.org/sites/default/files/2016-09/neuroscience-institute_0_0.jpg");
@@ -32,7 +37,10 @@ body{
 	/*background-image: url('https://www.overlakehospital.org/sites/default/files/2016-09/prostate-mri_0.jpg');*/
 }
 #slide4{
-	background-image: url('https://www.overlakehospital.org/sites/default/files/2016-09/one-chart_0.jpg');
+	/*background-image: url('https://www.overlakehospital.org/sites/default/files/2016-09/one-chart_0.jpg');*/
+}
+#slide4 .overlaySlide {
+	opacity: 1.0;
 }
 /*------------slides images text-----------*/
 .textWrap{
@@ -61,6 +69,10 @@ body{
   	text-align: center;
   	/*margin:30px; 	*/
 }
+.location {
+    font-size: smaller;
+    background-color: white;
+}
 #locationTile:hover{
 	box-shadow: 4px 4px 5px 2px grey;
 }
@@ -71,7 +83,8 @@ body{
 
 .info{
 	padding-left:20px;
-	border-bottom:2px solid lightgray;
+    padding-right: 10px;
+	/*border-bottom:2px solid lightgray;*/
 }
 /*--------Contact us----------*/
 .md-no-momentum{
@@ -82,5 +95,16 @@ body{
 	font-family: sans-serif;
 }
 
+.affliate-card {
+	height: 100px;
+	background-position: center;
+	background-size: contain;
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+	border: 10px solid white;
+}
+.section-content {
+    margin-top: 50px;
+}
 
 

@@ -14,7 +14,15 @@ app.controller('mainController',function(){
 				$(".navbar").addClass("non-carousel-nav");
 				$(".overlaySlide").hide();
 			}
-			console.log(index);
-	    }
+	    },
+		onSlideLeave: function (anchorLink, page, slide, direction, next) {
+			console.log(next)
+			console.log(slide)
+			if(next == 3){
+				$(".overlaySlide").addClass("noImage");
+			} else {
+				$(".overlaySlide").removeClass("noImage");
+			}
+        }
 	 };
 })

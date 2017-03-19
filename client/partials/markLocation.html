@@ -1,7 +1,7 @@
-<div class="container" ng-controller="mapsController">
-	<div class="col-lg-9" id="map"></div>
+<div class="container section-content" ng-controller="mapsController">
+	<div class="col-lg-9" id="map" md-whiteframe="1"></div>
 	<div class="col-lg-3 location">
-		<div class="row info" ng-repeat="info in addressInfo">
+		<div class="row info" ng-repeat="info in addressInfo" md-whiteframe="1">
 			<h3>{{info.location}}</h3>
 			<p>{{info.address}}</p>
 			<p>{{info.phoneNumber}}</p>
