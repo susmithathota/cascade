@@ -28,7 +28,7 @@ app.controller('mainController',function(){
 		afterRender: function () {
 		            setInterval(function () {
 		                $.fn.fullpage.moveSlideRight();
-		            }, 4000);
+		            }, 10000);
 		}
 	 };
 })
